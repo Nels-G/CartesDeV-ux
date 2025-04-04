@@ -162,7 +162,7 @@ function createParticles(x, y) {
     }
 }
 
-// Button click event
+// Button click event 
 giftBtn.addEventListener('click', (event) => {
     // Create explosion at button position
     const rect = giftBtn.getBoundingClientRect();
