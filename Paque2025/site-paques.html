@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Un cadeau spécial pour vous</title>
+    <!-- Ajout de polices Google pour un style romantique -->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Great+Vibes&family=Parisienne&family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="welcome-page" id="welcomePage">
+            <div class="easter-eggs" id="easterEggs"></div>
+            <h1>Bienvenue sur cette page spéciale</h1>
+            <p>Aujourd'hui, vous avez un cadeau précieux de la part d'une personne qui vous aime énormément. Entrez votre nom puis cliquez sur "Recevoir" pour avoir votre cadeau.</p>
+            <input type="text" id="nameInput" placeholder="Votre nom..." autofocus required>
+            <div id="errorMessage" class="error-message">Veuillez entrer votre nom pour continuer</div>
+            <button id="receiveBtn">Recevoir mon cadeau</button>
+        </div>
+        
+        <div class="celebration-page hidden" id="celebrationPage">
+            <h1 id="greetingTitle">Joyeuses Pâques, <span id="userName"></span>!</h1>
+            <p>Un message spécial vous attend...</p>
+            <div class="mailbox" id="mailbox">
+                <div class="mail-flag"></div>
+            </div>
+            <p>Cliquez sur la boîte aux lettres pour découvrir le mystère</p>
+        </div>
+        
+        <div class="message-page hidden" id="messagePage">
+            <h1>Message spécial pour vous</h1>
+            <div class="message-text">
+                <span id="recipientName"></span>, Nelson vous souhaite un beau jour de Pâques! <br>
+                Soyez béni(e) par la grâce du Créateur <span class="heart">♥</span>
+            </div>
+            <div class="message-signature">
+                Bisous!
+            </div>
+        </div>
+    </div>
+
+    <!-- Transition overlay -->
+    <div class="transition-overlay" id="transitionOverlay">
+        <div class="transition-content" id="transitionContent"></div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
